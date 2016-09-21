@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	
+	<div id="chart_div" style="width: 900px; height: 500px;"></div>
+	
+	<!-- onde adicionamos o script do RequireJS, temos um atributo data-main. Esse atributo diz ao Require que, quando ele for baixado, esse é o arquivo que deve ser executado: js/app.js . O Require faz a adição do .js no final do arquivo, então sempre chame-o sem a extensão.-->
+	<script data-main="js/app" src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+</body>
+</html>
