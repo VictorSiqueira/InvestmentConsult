@@ -6,7 +6,8 @@
     paths: {
       googleChartTools: ['https://www.gstatic.com/charts/loader'],
       angularJS: '../node_modules/angular/angular',
-      chartUtil: 'chartUtil'
+      chartUtil: 'chartUtil',
+      converterUtil : 'converterUtil'
     },
 
     /* É recomendado  utilizar o shim apenas para os arquivos non-AMD
@@ -23,6 +24,6 @@
   });
 
 //se nao chamar esta função noa irá funcionar e nem chamar porra nenhuma
- requirejs(['googleChartTools','angularJS','chartUtil'], function(){
+ requirejs(['googleChartTools','angularJS','chartUtil','converterUtil'], function(){
     console.log('all ok!')
  })
